@@ -1,0 +1,9 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/vidit/custom_string_proj/build/cmake_install.cmake",
+		"/Users/vidit/custom_string_proj/build/src/cmake_install.cmake",
+		"/Users/vidit/custom_string_proj/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,8 @@
+/Users/vidit/custom_string_proj/build/CMakeFiles/edit_cache.dir
+/Users/vidit/custom_string_proj/build/CMakeFiles/rebuild_cache.dir
+/Users/vidit/custom_string_proj/build/src/CMakeFiles/custom_string.dir
+/Users/vidit/custom_string_proj/build/src/CMakeFiles/edit_cache.dir
+/Users/vidit/custom_string_proj/build/src/CMakeFiles/rebuild_cache.dir
+/Users/vidit/custom_string_proj/build/tests/CMakeFiles/main.dir
+/Users/vidit/custom_string_proj/build/tests/CMakeFiles/edit_cache.dir
+/Users/vidit/custom_string_proj/build/tests/CMakeFiles/rebuild_cache.dir

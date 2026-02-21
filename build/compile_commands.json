@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/Users/vidit/custom_string_proj/build/src",
+  "command": "/usr/bin/clang++  -I/Users/vidit/custom_string_proj/src/../include -g -std=gnu++20 -o CMakeFiles/custom_string.dir/string.cc.o -c /Users/vidit/custom_string_proj/src/string.cc",
+  "file": "/Users/vidit/custom_string_proj/src/string.cc",
+  "output": "src/CMakeFiles/custom_string.dir/string.cc.o"
+},
+{
+  "directory": "/Users/vidit/custom_string_proj/build/tests",
+  "command": "/usr/bin/clang++  -I/Users/vidit/custom_string_proj/src/../include -g -std=gnu++20 -o CMakeFiles/main.dir/main.cc.o -c /Users/vidit/custom_string_proj/tests/main.cc",
+  "file": "/Users/vidit/custom_string_proj/tests/main.cc",
+  "output": "tests/CMakeFiles/main.dir/main.cc.o"
+}
+]
