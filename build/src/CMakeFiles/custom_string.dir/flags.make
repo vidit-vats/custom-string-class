@@ -6,5 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/vidit/custom_string_proj/src/../include
 
-CXX_FLAGS = -g -std=gnu++20
+CXX_FLAGSarm64 = -g -std=gnu++20 -arch arm64
+
+CXX_FLAGS = -g -std=gnu++20 -arch arm64
 

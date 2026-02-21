@@ -1,1 +1,1 @@
-/usr/bin/clang++ -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/main.dir/main.cc.o -o main  ../src/libcustom_string.a
+/usr/bin/clang++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/main.dir/main.cc.o -o main  ../src/libcustom_string.a

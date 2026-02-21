@@ -1,5 +1,7 @@
 #include <custom_string/string.hpp>
 #include <cstring>
+#include <ostream>
+#include <stdexcept>
 #include <utility>
 #include <iostream>
 
@@ -32,6 +34,11 @@ namespace custom_string {
         std::swap(data, other.data);
         std::swap(len, other.len);
         return *this;
+    }
+
+    std::ostream& operator<<(std::ostream& os, const my_string& str) {
+        os << str.data;
+        return os;
     }
 
     void my_string::print() const {
@@ -75,6 +82,30 @@ namespace custom_string {
 
         temp += other;
         return temp;
+    }
+
+    bool my_string::operator==(const my_string& other) const{
+        if(other.len != len)
+            return false;
+
+        // this is case when both are same in length
+        for(size_t i = 0; i < other.len; i++ )
+            if(data[i] != other.data[i])
+                return false;
+        
+        return true;
+    }
+
+    char& my_string::operator[](size_t index){
+        if(index >= len)
+            throw std::out_of_range("Index Out of Bounds");
+        return data[index];
+    }
+
+    char my_string::operator[](size_t index) const{
+        if(index >= len)
+            throw std::out_of_range("Index Out of Bounds");
+        return data[index];
     }
 
     my_string :: ~my_string(){
