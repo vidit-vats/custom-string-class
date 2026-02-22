@@ -1,2 +1,0 @@
-/usr/bin/ar qc libcustom_string.a CMakeFiles/custom_string.dir/string.cc.o
-/usr/bin/ranlib libcustom_string.a
