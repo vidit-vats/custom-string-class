@@ -41,6 +41,7 @@ namespace custom_string {
             char front_char() const;
             char back_char() const;
             bool empty() const;
+            my_string substring(std::size_t start,std::size_t cnt) const;
 
             // Destructor
             ~my_string();

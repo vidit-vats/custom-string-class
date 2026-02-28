@@ -30,6 +30,7 @@ my_string::my_string(const my_string &other) : len(other.len) {
   data = new char[len + 1];
   std::strcpy(data, other.data);
 }
+
 my_string &my_string::operator=(my_string other) {
   std::swap(data, other.data);
   std::swap(len, other.len);
@@ -144,6 +145,29 @@ char my_string::back_char() const {
     throw std::out_of_range("my_string::back_char(): empty string");
 
   return data[len - 1];
+}
+
+my_string my_string::substring(size_t start,size_t cnt) const {
+  if(start > len)
+    throw std::out_of_range("my_string::substr() Out of Bounds Index Supplied");
+
+  if(start == len)
+    return my_string();
+
+  size_t remaining_chars = len - start;
+  cnt = std::min(remaining_chars,cnt);
+
+  char *temp_str = new char[cnt + 1];
+
+
+  for(size_t i = 0; i < cnt; i++)
+    temp_str[i] = data[start + i];
+  temp_str[cnt] = '\0';
+    
+  my_string new_res(temp_str);
+  
+  delete[]temp_str;
+  return new_res;
 }
 
 my_string ::~my_string() { delete[] data; }

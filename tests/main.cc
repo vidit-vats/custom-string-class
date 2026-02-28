@@ -2,8 +2,8 @@
 #include <iostream>
 
 int main() {
-    custom_string::my_string s1("vidit");
-    custom_string::my_string s2("vidit");
+    // custom_string::my_string s1("vidit");
+    // custom_string::my_string s2("vidit");
     // custom_string::my_string s3;
 
     // s3 = s1 + s2;
@@ -18,7 +18,12 @@ int main() {
     // std::cout<<std::endl;
     // std::cout<<s1<<std::endl;
 
-    bool result = s1 <= s2;
-    std::cout<<result;
+    // bool result = s1 <= s2;
+    // std::cout<<result;
+
+    custom_string::my_string s = "vidit";
+    custom_string::my_string rs = s.substring(0,300);
+
+    std::cout<<rs;
     return 0;
 }
